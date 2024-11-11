@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(94, 94, 94);
+  color: blanchedalmond;
+  gap: 32px;
+  padding: 32px;
+
+  @media (min-width: 768px) {
+    max-width: 1200px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 56px;
+  font-weight: 700;
+  height: 200px;
+  width: 100%;
+  background-color: blanchedalmond;
+  color: rgb(94, 94, 94);
+  border-radius: 8px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+#search-input {
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  border: unset;
+  border-radius: 8px;
+  width: -webkit-fill-available;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: unset;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: blanchedalmond;
+  color: rgb(94, 94, 94);
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 100%;
+
+  &:hover {
+    background-color: rgb(94, 94, 94);
+    color: blanchedalmond;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-within {
+    border: 1px solid blanchedalmond;
+  }
+}
+
+.section-center {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  border: 1px solid blanchedalmond;
+  border-radius: 8px;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: left;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+
+  @media (min-width: 768px) {
+    width: 200px;
+  }
+}
